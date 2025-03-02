@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root{
+            --bgcolor: rgb(238, 208, 175);
+        }
+        body{
+            background-color: black;
+            padding: 0px;
+            margin: 0px;
+        }
+        h1,h4{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        h2,p{
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #first-div{
+            border-color: rgb(214, 60, 145);
+        }
+        #second-div{
+            border-color: rgb(60, 214, 175);
+        }
+        #third-div{
+            border-color: orange;
+        }
+        #first-div, #second-div, #third-div{
+            border-style: solid;
+            border-width: 5px;
+            background-color: var(--bgcolor);
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ONLY</title>
+</head>
+<body>
+    <h1>HTML Only</h1>
+    <h4>Navigation</h4>
+
+    <hr color="orange">
+    <div id="first-div">
+        <h2> What is this? </h2>
+        <p> This page was inspired by a <a href="MYSELF.html" style="text-decoration: none;"> tweet from Salma.</a> 
+        Pretty HTML only pages are difficult to make well, and accessible. But here we are. I'm trying my best.</p>
+    </div>
+
+    <hr color="orange">
+    <div id="second-div">
+        <h2> How does this work? </h2>
+        <p> The key to a lot of this is leveraging using tables with a role="presentation" attributes to make a decorated sections without
+            css. if you view sources on the page, you'll see that there are a LOT of tables. The table tag typically is used to display
+            tabular data and should NOT be used as a layout method. However, since I am not allowed to use CSS, I am pretty much exclussively
+            relying on tables for this purpose. The presentation role tells the browser to not expose the tables and its tabular cheldren in the
+            accessibility tree. This will make it easier to navigate for assistive technology.
+        </p>
+        <p>
+            I'm also leveraging some deprecated HTML elements from HTML 3.2 that you should never use. In order to be "compliant", I've
+            added the HTML 3.2 doctype at the top of the page:
+            &lt;!DOCTYPE HTML PUBLIC "-//W3C/DTD HTML 3.2 final//EN"&gt; <br> This helps give a hint to the browser that we are going to
+            use some older stuff.
+        </p>
+        <p> HOWEVER, I'm also using some newer things such as details/summary, section, main, header, and footer. So I'm just making a
+            mess of my doctype and what I should be actually using!
+        </p>
+    </div>
+
+    <hr color="orange">
+    <div id="third-div">
+        <h2> But Why? </h2>
+        <img src="useme1.jpg" height="300px">
+    </div>
+</body>
+</html>

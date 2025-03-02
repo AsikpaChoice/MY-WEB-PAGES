@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: black;
+            padding: 0px;
+            margin: 0px;
+        }
+        #main-div{
+            background-color: blueviolet;
+            height: 80vh;
+            width: 100%;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #first-child{
+            background-color: white;
+            height: 49vh;
+            width: 25vw;
+            padding-left: 20px;
+            padding-top: 39px;
+            padding-right: 20px;
+        }
+        #second-child{
+            background-image: url(laptop\ 2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 54vh;
+            width: 27vw;
+        }
+        #email,#password{
+            border-style: none;
+            padding-bottom: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #login{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button{
+            display: block;
+            margin-top: 30px;
+            padding: 10px;
+            padding-left: 182px;
+            padding-right: 182px;
+            background-color:blueviolet;
+            color: yellow;
+            border-style: none;
+            border-radius: 5px;
+        }
+        #last-text{
+            text-align: center;
+        }
+        h1,h3{
+            color: white;
+            font-family: calibri;
+            text-align: center;
+        }
+        h1{
+            padding-top: 34%;
+            margin-bottom: 2px;
+        }
+        h3{
+            margin-top: 0px;
+        }
+        @media screen and (max-width:425px) {
+            #main-div{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                width: 100vw;
+            }
+            #first-child, #second-child{
+            height: 50vh;
+            width: 50vw;
+            padding-bottom: 10px;}
+
+            button{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double form</title>
+</head>
+<body>
+    <div id="main-div">
+        <div id="first-child"> 
+            <p id="login"> Login </p>
+            <img src="email.png" width="20px">
+            <input id="email" type="email" placeholder="Enter your email">
+            <hr>
+
+            <img src="password.jpg" width="20px">
+            <input id="password" type="password" placeholder="Enter your password">
+            <hr>
+            <a href="MYSELF.html"> Forget password? </a>
+            <button>Login</button>
+            <p id="last-text"> Don't have an account?
+                <a href="ARTICLE 2.html"> Signup now</a> </p>
+        </div>
+
+        <div id="second-child"> 
+            <h1> Every new friend is a <br>new adventure. </h1>
+            <h3> let's get connected </h3>
+        </div>
+    </div>
+</body>
+</html>

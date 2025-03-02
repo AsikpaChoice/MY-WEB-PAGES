@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root{
+            --bgcolor: rgb(212, 70, 158);
+        }
+        body{
+            background-color: rgb(141, 124, 118);
+            padding: 0px;
+            margin: 0px;
+        }
+        p{
+            font-size: 50px;
+            padding-top: 5px;
+            margin-top: 0px;
+            text-align: center;
+            font-family: cursive;
+            margin-bottom: 5px;
+            color: white;
+        }
+        span{
+            padding-left: 140px;
+        }
+        #header-div{
+            background-color: var(--bgcolor);
+            padding: 10px;
+            width: 80vw;
+            margin-top: 0px;
+            font-family: calibri;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        #input{
+            margin-left: 100px;
+            padding-right: 60px;
+            border-style: none;
+        }
+        button{
+            padding-left: 15px;
+            padding-right: 15px;
+            border-style: none;
+            background-color: black;
+            color: white;
+        }
+        #main-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #first-div{
+            background-color: white;
+            width: 60vw;
+            margin-top: 8px;
+            padding: 10px;
+        }
+        #second-div{
+            background-color: var(--bgcolor);
+            margin-top: 8px;
+            padding: 10px;
+            margin-left: 8px;
+            width: 18vw;
+            padding-bottom: 260px;
+        }
+
+        #footer-div{
+            background-color:white;
+            padding: 10px;
+            width:80vw;
+            margin-top: 8px;
+            font-family: calibri;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        #h,#f{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        @media screen and (max-width:425px){
+            #main-div{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;}
+
+            #second-div{
+                width: 40vw;
+            }
+
+            #header-div{
+                width: 100vw;
+                padding: 5px;
+                margin-right: 0px;
+            }
+
+            #footer-div{
+                width: 100vw;
+                padding: 5px;
+                margin-right: 0px;
+            }
+
+            
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+</head>
+<body>
+    <p>Header</p>
+
+    <div id="h"> 
+        <div id="header-div">
+        <span> HOME </span>
+        <span> OUR TEAM </span>
+        <span> PROJECTS </span>
+        <span> CONTACT </span>
+        <input id="input" type="text" placeholder="Search query">
+        <button>Go!</button>
+        </div>
+    </div>
+    
+    <div id="main-div">
+
+        <div id="first-div">
+            <h1 style="font-family: cursive; text-align: center; margin-top: 0px;"> 
+                Article heading</h1>
+
+            <p style="font-size: 15px; color: black; text-align: justify;"> 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illo, labore,
+                molestias perferendis commodi, totam eius laudantium ullam fuga delectus ratione iure necessitatibus aut! Quis cum 
+                dignissimos modi fugiat, perferendis architecto voluptate soluta hic officia sint praesentium iste voluptatibus nostrum,
+                </p>
+            
+                <h2 style="font-family: cursive; text-align: left;"> 
+                Subsection</h2>
+
+                <p style="font-size: 15px; color: black; text-align: justify;"> 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illo, labore,
+                    molestias perferendis commodi, totam eius laudantium ullam fuga delectus ratione iure necessitatibus aut! Quis cum 
+                    dignissimos modi fugiat, perferendis architecto voluptate soluta hic officia sint praesentium iste voluptatibus nostrum,
+                    </p>
+
+                    <h2 style="font-family: cursive; text-align: left;"> 
+                        Another Subsection</h2>
+
+                        <p style="font-size: 15px; color: black; text-align: justify;"> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illo, labore,
+                            molestias perferendis commodi, totam eius laudantium ullam fuga delectus ratione iure necessitatibus aut! Quis cum 
+                            dignissimos modi fugiat, perferendis architecto voluptate soluta hic officia sint praesentium iste voluptatibus nostrum,
+                            </p>
+                            <p style="font-size: 15px; color: black; text-align: justify;"> 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illo, labore,
+                                molestias perferendis commodi, totam eius laudantium ullam fuga delectus ratione iure necessitatibus aut! Quis cum 
+                                dignissimos modi fugiat, perferendis architecto voluptate soluta hic officia sint praesentium iste voluptatibus nostrum,
+                                </p>
+        </div>
+
+
+        <div id="second-div">
+            <h1 style="font-family: cursive; text-align: center;"> Related</h1>
+            <ul>
+                <li style="padding-bottom: 10px;"> <a href="practical work 2.html"> Oh I do like to be beside the seaside </a> </li>
+                <li style="padding-bottom: 10px;"> <a href="practical work.html"> Oh I do like to be beside the sea </a> </li>
+                <li style="padding-bottom: 10px;"> <a href="MYSELF.html"> Althrough in the North of England </a> </li>
+                <li style="padding-bottom: 10px;"> <a href="MYSELF.html"> It never stops raining </a> </li>
+                <li style="padding-bottom: 10px;"> <a href="MYSELF.html"> Oh well </a> </li>
+            </ul>
+        </div>
+
+</div>
+
+<div id="f">
+    <div id="footer-div">
+    &copy;Copyright 2050 by nobody. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
